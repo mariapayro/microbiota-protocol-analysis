@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. Cargar la tabla de metadatos (asegúrate de que el nombre del archivo sea el correcto)
-df = pd.read_csv("/Users/mpg/Downloads/Draft-Microbiota/Analisis-Pipeline-Microbiota/SraRunTable.csv", sep=",")
+df = pd.read_csv("SraRunTable.csv", sep=",")
 
 # 2. Renombrar 'Run' a 'SRA_Accession' y usarlo también como 'ID'
 # Si no hay 'Sample Name', el número de Run (SRR...) es el identificador más robusto.
